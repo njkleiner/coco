@@ -91,4 +91,20 @@ describe('parse', () => {
             discussion: null
         }]);
     });
+
+    it('should parse multiple comments (reverse order)', () => {
+        const result = parse('nitpick (non-blocking): This is not worded correctly.\n\nquestion (non-blocking): At this point, does it matter which thread has won?\n\nMaybe to prevent a race condition we should keep looping until they\'ve all won?');
+
+        assert.deepEqual(result, [{
+            label: 'nitpick',
+            subject: 'This is not worded correctly.',
+            decoration: ['non-blocking'],
+            discussion: null
+        }, {
+            label: 'question',
+            subject: 'At this point, does it matter which thread has won?',
+            decoration: ['non-blocking'],
+            discussion: 'Maybe to prevent a race condition we should keep looping until they\'ve all won?'
+        }]);
+    });
 });

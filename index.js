@@ -1,4 +1,4 @@
-const PATTERN = /(\w+)( \([\w- ]+\))?: (.+)(\r?\n\r?\n.+)?/gm;
+const PATTERN = /(\w+)( \([\w- ]+\))?: (.+)(\r?\n\r?\n(?!(\w+)( \([\w- ]+\))?:).+)?/gm;
 
 /**
 * Parse conventional comments from a string.
