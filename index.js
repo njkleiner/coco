@@ -1,4 +1,4 @@
-const PATTERN = /(\w+)( \([\w- ]+\))?: (.+)(\r?\n\r?\n(?!(\w+)( \([\w- ]+\))?:).+)?/gm;
+const PATTERN = /(\w+)( \([\w-,]+\))?: (.+)(\r?\n\r?\n(?!(\w+)( \([\w- ]+\))?:).+)?/gm;
 
 /**
 * Parse conventional comments from a string.
@@ -25,7 +25,7 @@ function parse(input) {
             decoration = decoration.trim();
             decoration = decoration.replace(/^\(/, '');
             decoration = decoration.replace(/\)$/, '');
-            decoration = decoration.split(' ');
+            decoration = decoration.split(',');
         }
 
         if (discussion) {

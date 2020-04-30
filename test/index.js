@@ -33,7 +33,7 @@ describe('parse', () => {
     });
 
     it('should parse label + subject + multiple decorations', () => {
-        const result = parse('suggestion (non-blocking needs-feedback): This is not worded correctly.');
+        const result = parse('suggestion (non-blocking,needs-feedback): This is not worded correctly.');
 
         assert.deepEqual(result, [{
             label: 'suggestion',
