@@ -1,0 +1,21 @@
+{
+    "name": "@njkleiner/coco",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "test": "mocha --recursive test/"
+    },
+    "keywords": [
+        "parser", "conventional comments"
+    ],
+    "author": "Noah Kleiner <noah@njkleiner.com>",
+    "license": "MIT",
+    "description": "Quickly parse conventional comments",
+    "devDependencies": {
+        "mocha": "^7.1.2"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/njkleiner/coco.git"
+    }
+}
