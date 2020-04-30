@@ -2,6 +2,10 @@
 
 Quickly parse [conventional comments](https://conventionalcomments.org).
 
+## Install
+
+`$ npm install @njkleiner/coco`
+
 ## Usage
 
 ```javascript
