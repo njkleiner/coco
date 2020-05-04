@@ -18,6 +18,9 @@
     "directories": {
         "test": "test"
     },
+    "files": [
+        "index.js"
+    ],
     "repository": {
         "type": "git",
         "url": "https://github.com/njkleiner/coco.git"
