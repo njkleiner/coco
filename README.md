@@ -11,9 +11,9 @@ Quickly parse [conventional comments](https://conventionalcomments.org).
 ```javascript
 const coco = require('@njkleiner/coco');
 
-coco('nitpick (non-blocking): This is not worded correctly.');
+coco.parse('nitpick (non-blocking): This is not worded correctly.');
 // => [{label: 'nitpick', subject: 'This is not worded correctly.', decoration: ['non-blocking'], discussion: null}]
 
-coco('not a conventional comment');
+coco.parse('not a conventional comment');
 // => []
 ```

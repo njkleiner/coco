@@ -38,4 +38,4 @@ function parse(input) {
     return comments;
 }
 
-module.exports = Object.freeze(parse);
+module.exports = Object.freeze({parse});
