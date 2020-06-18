@@ -20,3 +20,17 @@ coco.parse('suggestion: Let\'s avoid using this specific function...\n\nIf we re
 coco.parse('not a conventional comment');
 // => []
 ```
+
+## Contributing
+
+You can contribute to this project by [sending patches](https://git-send-email.io) to `noah@njkleiner.com`.
+
+## Authors
+
+* [Noah Kleiner](https://github.com/njkleiner)
+
+See also the list of [contributors](https://github.com/njkleiner/coco/contributors) who participated in this project.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE.md](LICENSE.md) file for details.
