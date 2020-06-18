@@ -1,7 +1,7 @@
 {
     "name": "@njkleiner/coco",
     "version": "0.0.0",
-    "main": "index.js",
+    "main": "lib/index.js",
     "scripts": {
         "test": "mocha --recursive test/"
     },
@@ -16,10 +16,11 @@
     },
     "dependencies": {},
     "directories": {
+        "lib": "lib",
         "test": "test"
     },
     "files": [
-        "index.js"
+        "lib"
     ],
     "repository": {
         "type": "git",
